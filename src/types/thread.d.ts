@@ -1,0 +1,3 @@
+interface IThreadConfig {
+    sentences?: ISentence
+}

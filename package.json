@@ -1,0 +1,24 @@
+{
+  "name": "thread-core",
+  "version": "1.0.0",
+  "description": "Core to run multiple thread instances, which will parse and execute available JSON instructions",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ts-node ./src/test.ts"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "node",
+    "thread",
+    "core",
+    "instances",
+    "procedure",
+    "instructions"
+  ],
+  "author": "stexcore",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
