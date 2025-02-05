@@ -1,7 +1,11 @@
 import ThreadCore from "./core/core";
 
-const core = new ThreadCore();
-const thread = core.createThread();
 
+// create instance thread
+const core = new ThreadCore();
+
+// initialize process
 core.initialize();
-thread.run();
+
+// Run process
+core.createThread();

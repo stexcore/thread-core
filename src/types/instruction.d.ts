@@ -1,3 +1,7 @@
+/**
+ * Possibles Json value 
+ */
+type IJsonValue = string | number | null | IJson | IJsonValue[];
 
 /**
  * Structure data received from JSON
@@ -6,16 +10,16 @@ interface IJson {
     /**
      * Possible JSON values
      */
-    [key: string]: string | number | null | IJson | IJson[]
+    [key: string]: IJsonValue
 }
 
 /**
  * Instruction item
  */
-type IIntruction = { type: string } & IJson;
+type IIntruction = { script: string } & IJson;
 
 /**
- * Label reference
+ * Tag reference
  */
 type ILabel = string;
 
