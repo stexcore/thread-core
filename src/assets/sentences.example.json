@@ -1,0 +1,54 @@
+[
+    "@inicio",
+    [
+        "@paso2"
+    ],
+    "@paso3",
+    {
+        "script":"set",
+        "variables": {
+            "food": true
+        }
+    },
+    {
+        "script":"if",
+        "where": {
+            "food": true,
+            "prueba": null
+        },
+        "then": [
+            {
+                "script":"log",
+                "message":"Soy las sentencias del if :D"
+            },
+            {
+                "script":"if",
+                "where": {
+                    "food": true,
+                    "@or": [
+                        {
+                            "food": false,
+                            "prueba": null
+                        },
+                        {
+                            "food": false
+                        }
+                    ]
+                },
+                "then": {
+                    "script":"log",
+                    "message": "Prueba FINALIZADO ???????"
+                },
+                "else": {
+                    "script": "log",
+                    "message": "NO QUIERO COMER NADA!"
+                }
+            }
+        ]
+    },
+    {
+        "script": "log",
+        "message": "Buenos días {{username}}! como estas?"
+    },
+    "@final"
+]

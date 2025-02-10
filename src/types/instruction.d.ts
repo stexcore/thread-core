@@ -1,7 +1,7 @@
 /**
  * Possibles Json value 
  */
-type IJsonValue = string | number | null | IJson | IJsonValue[];
+type IJsonValue = boolean | string | number | null | IJson | IJsonValue[];
 
 /**
  * Structure data received from JSON
@@ -26,4 +26,4 @@ type ILabel = string;
 /**
  * Sentence JSON
  */
-type ISentence = ILabel | IIntruction | IIntruction[];
+type ISentence = ILabel | IIntruction | ISentence[];

@@ -37,4 +37,10 @@ export default abstract class Thread {
      */
     public abstract getAllVars(): IJson;
     
+    /**
+     * Execute sentences into current thread
+     * @param sentence Sentence
+     * @param entry_label Entry sentence
+     */
+    public abstract execute(sentence: ISentence, entry_label?: string): void;
 }

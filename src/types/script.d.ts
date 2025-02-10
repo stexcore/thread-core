@@ -11,7 +11,7 @@ interface IConstructorRegistration<T> {
 /**
  * Constructor script
  */
-interface IThreadScriptConstructor extends IConstructorRegistration<ThreadScript> {
+interface IThreadScriptConstructor extends IConstructorRegistration<ThreadScript<any>> {
     schema: ISchema
 }
 

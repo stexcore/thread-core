@@ -1,3 +1,4 @@
+
 /**
  * Initial settings thread
  */
@@ -11,5 +12,9 @@ interface IThreadConfig {
  * Initial thread Core settings
  */
 interface IThreadCoreConfig {
-    thread?: IThreadConfig
+    thread?: IThreadConfig,
+    scripts?: {
+        constructor: IThreadScriptConstructor,
+        name: string
+    }[]
 }
